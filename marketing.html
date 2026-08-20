@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>проОбъект</title>
+    <meta name="description" content="проОбъект - мобильный личный кабинет сотрудника объекта для задач, документов, событий и уведомлений.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --text: #172033;
+        --muted: #647084;
+        --border: #d9dee8;
+        --accent: #2f6fef;
+        --green: #147a53;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      }
+
+      .page {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .hero,
+      .section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 18px 44px rgba(23, 32, 51, 0.08);
+      }
+
+      .hero {
+        padding: clamp(28px, 6vw, 64px);
+      }
+
+      .section {
+        margin-top: 18px;
+        padding: clamp(22px, 4vw, 38px);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.16;
+        margin: 0;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        font-size: clamp(36px, 6vw, 64px);
+      }
+
+      h2 {
+        font-size: clamp(24px, 3vw, 32px);
+      }
+
+      p {
+        margin: 16px 0 0;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: 19px;
+        font-weight: 700;
+        max-width: 760px;
+      }
+
+      .tag {
+        color: var(--green);
+        font-weight: 900;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 22px;
+      }
+
+      .item {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      .item strong {
+        display: block;
+      }
+
+      .item p {
+        color: var(--muted);
+        margin-top: 8px;
+      }
+
+      ul {
+        margin: 16px 0 0;
+        padding-left: 24px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .links a {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text);
+        font-weight: 800;
+        padding: 10px 12px;
+        text-decoration: none;
+      }
+
+      .links a:first-child {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #ffffff;
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .page {
+          width: min(100% - 20px, 1040px);
+          padding: 10px 0;
+        }
+
+        .hero,
+        .section {
+          padding: 22px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="hero">
+        <p class="tag">Корпоративный личный кабинет</p>
+        <h1>проОбъект</h1>
+        <p class="lead">Мобильное приложение для сотрудников объекта: задачи, внутренние документы, события, вложения и рабочие уведомления в одном защищенном интерфейсе.</p>
+        <div class="links">
+          <a href="support.html">Поддержка</a>
+          <a href="privacy-policy.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Основные возможности</h2>
+        <div class="grid">
+          <div class="item">
+            <strong>Задачи</strong>
+            <p>Просмотр списка задач, детализация, выполнение, комментарии, подзадачи и вложения.</p>
+          </div>
+          <div class="item">
+            <strong>Документы</strong>
+            <p>Доступ к внутренним документам, фильтрам, отчетам и файлам, связанным с рабочими процессами.</p>
+          </div>
+          <div class="item">
+            <strong>Уведомления</strong>
+            <p>События и push-уведомления помогают не пропускать новые задачи и изменения по процессам.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Для кого приложение</h2>
+        <p>проОбъект предназначен для сотрудников организаций, которым предоставлен корпоративный доступ к рабочим процессам объекта. Вход выполняется по учетной записи, выданной организацией или администратором сервиса.</p>
+      </div>
+
+      <div class="section">
+        <h2>Рабочий контур</h2>
+        <ul>
+          <li>профиль сотрудника с контактными данными и фотографией;</li>
+          <li>защищенная авторизация и восстановление доступа;</li>
+          <li>просмотр событий, задач, документов и отчетов;</li>
+          <li>выбор и открытие рабочих файлов и вложений;</li>
+          <li>настройка каналов уведомлений.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

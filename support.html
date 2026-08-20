@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Поддержка проОбъект</title>
+    <meta name="description" content="Поддержка пользователей мобильного приложения проОбъект.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --text: #172033;
+        --muted: #647084;
+        --border: #d9dee8;
+        --accent: #2f6fef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      }
+
+      .page {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: clamp(24px, 5vw, 56px);
+        box-shadow: 0 18px 44px rgba(23, 32, 51, 0.08);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+        margin: 0;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        font-size: clamp(30px, 4vw, 44px);
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-top: 34px;
+      }
+
+      p {
+        margin: 16px 0 0;
+      }
+
+      ul {
+        margin: 14px 0 0;
+        padding-left: 24px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 800;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .contact {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-top: 18px;
+        padding: 18px;
+      }
+
+      .contact strong {
+        display: block;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .nav a {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text);
+        padding: 10px 12px;
+        text-decoration: none;
+      }
+
+      @media (max-width: 520px) {
+        .page {
+          width: min(100% - 20px, 920px);
+          padding: 10px 0;
+        }
+
+        .panel {
+          padding: 22px 18px;
+        }
+
+        h2 {
+          font-size: 19px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="panel">
+        <h1>Поддержка проОбъект</h1>
+        <p class="lead">Помощь пользователям корпоративного мобильного приложения.</p>
+
+        <h2>Контакты поддержки</h2>
+        <div class="contact">
+          <strong>Телефон</strong>
+          <a href="tel:+74959090098">+7 495 909-00-98</a>
+        </div>
+        <div class="contact">
+          <strong>Электронная почта</strong>
+          <a href="mailto:logion@logion-mobile.ru">logion@logion-mobile.ru</a>
+        </div>
+        <p>Если приложение выдано вашей организацией, также обратитесь к внутреннему администратору или ответственному сотруднику вашей организации. Это самый быстрый способ решить вопросы доступа, учетной записи, рабочих документов и ролей.</p>
+
+        <h2>С чем можно обратиться</h2>
+        <ul>
+          <li>проблемы со входом или восстановлением доступа;</li>
+          <li>вопросы по профилю пользователя, задачам, документам и уведомлениям;</li>
+          <li>ошибки при загрузке или открытии вложений;</li>
+          <li>общая обратная связь и предложения по улучшению приложения.</li>
+        </ul>
+
+        <h2>Что подготовить перед обращением</h2>
+        <ul>
+          <li>название вашей организации;</li>
+          <li>адрес электронной почты, используемый для входа;</li>
+          <li>краткое описание проблемы и шаги, после которых она возникает;</li>
+          <li>модель устройства и версию операционной системы, если проблема связана с приложением на устройстве.</li>
+        </ul>
+
+        <div class="nav">
+          <a href="marketing.html">О приложении</a>
+          <a href="privacy-policy.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
